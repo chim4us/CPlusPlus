@@ -25,11 +25,14 @@ int main()
 	emma.name = "Emma";
 	emma.age = 27;
 	emma.gender = "male";
+	
+	Person emeka {"Emeka",27,"amle"};
 
-	Person people[] = {frank,emma};
+	Person people[] = {frank,emma,emeka};
 	
 	printPersonInfo(people[1]);
 	printPersonInfo(people[0]);
+	printPersonInfo(people[2]);
 	printPersonInfo(frank);
 	
 	return 0;
