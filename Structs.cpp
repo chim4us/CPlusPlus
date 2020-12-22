@@ -16,19 +16,21 @@ void printPersonInfo(Person p){
 
 int main()
 {
-	Person Frank;
-	Frank.name = "Frank";
-	Frank.age = 23;
-	Frank.gender = "male";
+	Person frank;
+	frank.name = "Frank";
+	frank.age = 23;
+	frank.gender = "male";
 
-	Person Frank;
-	Frank.name = "Frank";
-	Frank.age = 23;
-	Frank.gender = "male";
+	Person emma;
+	emma.name = "Emma";
+	emma.age = 27;
+	emma.gender = "male";
 
-	Person people[] = {}
+	Person people[] = {frank,emma};
 	
-	printPersonInfo(Frank);
+	printPersonInfo(people[1]);
+	printPersonInfo(people[0]);
+	printPersonInfo(frank);
 	
 	return 0;
 }
