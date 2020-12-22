@@ -14,8 +14,17 @@ void printPersonInfo(Person p){
 	cout << "The gender of the person is "<<p.gender<<endl;
 }
 
+struct Rectangle
+{
+	double length{ 1.0 }; // non-static member initialization
+	double width{ 1.0 };
+};
+ 
+
 int main()
 {
+    Rectangle x{ 2.0, 2.0 }; // uniform initialization
+    
 	Person frank;
 	frank.name = "Frank";
 	frank.age = 23;
